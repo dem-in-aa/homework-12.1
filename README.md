@@ -60,13 +60,13 @@ F) Дата - дата (date)
 
 Сотрудник
 ```
-    - staff_id_primary_key (serial)
-    - family_name (varchar)
-    - name (varchar)
-    - patronymic (varchar)
-    - date_of_hiring             (date)
-    - Код должности, внешний ключ , integer
-    - id Проекта,внешний ключ,serial
+   - staff_id_primary_key       (serial)
+   - family_name                (varchar)
+   - name                       (varchar)
+   - patronymic                 (varchar)
+   - date_of_hiring             (date)
+   - post_id_primary_key        (serial)
+   - project_id primary_key     (serial)
 ```
 Дата найма
 ```
@@ -75,43 +75,43 @@ F) Дата - дата (date)
 ```
 Должность
 ```
-   - post_id_primary_key     (serial)
-   - post_type               (varchar)    
-   - division_type_id        (serial)
-   - salary_id               (serial)
+   - post_id_primary_key        (serial)
+   - post_type                  (varchar)    
+   - division_type_id           (serial)
+   - salary_id                  (serial)
 ```
 Оклад
 ```
-    - salary_id              (serial)
-    - salary                 (numeric) 
+    - salary_id                 (serial)
+    - salary                    (numeric) 
 ```
 Тип подразделения
 ```
-    - division_type_id       (serial)
-    - division_type          (varchar)    
+    - division_type_id          (serial)
+    - division_type             (varchar)    
 ```    
 Структурное подразделение
 ```
-    - division_id            (serial)
-    - division_name          (varchar)
-    - division_type_id       (serial)    
+    - division_id               (serial)
+    - division_name             (varchar)
+    - division_type_id          (serial)    
 ```    
 Адрес
 ```
-    - address_id primary_key (serial)   
-    - address                (varchar)
-    - region_id              (serial)    
+    - address_id primary_key    (serial)   
+    - address                   (varchar)
+    - region_id                 (serial)    
 ```    
 Регион
 ```
-    - region_id              (serial)
-    - region                 (varchar)
+    - region_id                 (serial)
+    - region                    (varchar)
 ```
 
 Проект
 ```
-   - project_id primary_key  (serial)
-   - project_type            (varchar)
+   - project_id primary_key     (serial)
+   - project_type               (varchar)
 ```
 
 
