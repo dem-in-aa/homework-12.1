@@ -61,7 +61,7 @@ F) Дата - дата (date)
 Сотрудники
 
 ```
-    - staff_id, первичный ключ, serial
+    - staff_id primary_key
     
     - Фамилия, varchar
     - Имя, varchar
@@ -118,9 +118,10 @@ F) Дата - дата (date)
 
 Проект
 ```
-    -id Проекта, первичный ключ,serial
-    -Проект,varchar
-```
+  project_id primary_key (serial)
+
+- project_type (varchar)
+   ```
 
 
 
@@ -150,14 +151,6 @@ staff (
  
  project_id VARCHAR(50),
  
-)
-
-salary (
-
-salary_id primary_key
-
-pay numeric
-
 )
 
 position (
@@ -216,15 +209,6 @@ street VARCHAR(50)
 
 house VARCHAR(50)
 
-)
-
-project (
-
-project_id primary_key
-
-project_type
-
-)
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
