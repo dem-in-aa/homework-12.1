@@ -60,14 +60,14 @@ F) Дата - дата (date)
 
 Сотрудник
 ```
-   - staff_id                   (primary key, serial)
+   - staff_id                   (primary key)
    - family_name                (varchar)
    - name                       (varchar)
    - patronymic                 (varchar)
    - date_of_hiring_id          (date)
-   - post_id                    (serial)
-   - division_id                (serial)
-   - project_id                 (serial)
+   - post_id                    (foreign key)
+   - division_id                (foreign key)
+   - project_id                 (foreign key)
 ```
 Дата найма
 ```
@@ -76,37 +76,37 @@ F) Дата - дата (date)
 ```
 Должность
 ```
-   - post_id                    (primary key, serial)
+   - post_id                    (primary key)
    - post_type                  (varchar)    
-   - division_type_id           (serial)
-   - salary_id                  (serial)
+   - division_type_id           (foreign key)
+   - salary_id                  (foreign key)
 ```
 Оклад
 ```
-    - salary_id                 (primary key, serial)
+    - salary_id                 (primary key)
     - salary                    (numeric) 
 ```
 Тип подразделения
 ```
-    - division_type_id          (primary key, serial)
+    - division_type_id          (primary key)
     - division_type             (varchar)    
 ```    
 Структурное подразделение
 ```
-    - division_id               (primary key, serial)
+    - division_id               (primary key)
     - division_name             (varchar)
-    - division_type_id          (serial)
-    - address_id                (serial)
+    - division_type_id          (foreign key)
+    - address_id                (foreign key)
 ```    
 Адрес
 ```
     - address_id                (primary key, serial)   
     - address                   (varchar)
-    - region_id                 (serial)    
+    - region_id                 (foreign key)   
 ```    
 Регион
 ```
-    - region_id                 (primary key, serial)
+    - region_id                 (primary key
     - region                    (varchar)
 ```
 
