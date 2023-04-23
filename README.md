@@ -61,14 +61,17 @@ F) Дата - дата (date)
 Сотрудник
 ```
     - staff_id_primary_key (serial)
-    
-    - Фамилия, varchar
-    - Имя, varchar
-    - Отчество, varchar
-    - Дата найма, date
+    - family_name (varchar)
+    - name (varchar)
+    - patronymic (varchar)
+    - date_of_hiring             (date)
     - Код должности, внешний ключ , integer
-    - Идентификатор адреса ,внешний ключ, serial   
     - id Проекта,внешний ключ,serial
+```
+Дата найма
+```
+   - date_of_hiring_primary_key (serial)
+   - date_of_hiring             (date)    
 ```
 Должность
 ```
