@@ -83,44 +83,39 @@ F) Дата - дата (date)
 
 Оклад
 ```
-    -salary_id  
-
-    - pay numeric
+    - salary_id  (serial)
+    - salary     (numeric)
     
 ```
 
 
 Структурное подразделение
 ```
-    - division_id, первичный ключ, integer
+    - division_id
 
-    -Название, varchar
-    -тип подразделения, varchar
+    - Название, varchar
+    - тип подразделения, varchar
     
 ```    
-
-
 Адрес
 ```
     - address_id primary_key (serial)   
 
-    - address, varchar
-    - region_id (serial)
+    - address                (varchar)
+    - region_id              (serial)
     
 ```    
 Регион
 ```
     - region_id (serial)
-    - Регион,varchar
-
+    - region    (varchar)
 ```
 
 Проект
 ```
    - project_id primary_key (serial)
-
-   - project_type (varchar)
-   ```
+   - project_type           (varchar)
+```
 
 
 staff (
@@ -190,20 +185,6 @@ date_off_id primary_key
 
 date datetime
 
-(
-
-
-branch address (
-
-address_id primary_key
-
-edge VARCHAR(50)
-
-city VARCHAR(50)
-
-street VARCHAR(50)
-
-house VARCHAR(50)
 
 
 ## Дополнительные задания (со звёздочкой*)
