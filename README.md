@@ -60,122 +60,61 @@ F) Дата - дата (date)
 
 Сотрудник
 ```
-   - staff_id_primary_key       (serial)
+   - staff_id                   (primary key, serial)
    - family_name                (varchar)
    - name                       (varchar)
    - patronymic                 (varchar)
-   - date_of_hiring             (date)
-   - post_id_primary_key        (serial)
-   - project_id primary_key     (serial)
+   - date_of_hiring_id          (date)
+   - post_id                    (serial)
+   - division_id                (serial)
+   - project_id                 (serial)
 ```
 Дата найма
 ```
-   - date_of_hiring_primary_key (serial)
+   - date_of_hiring_id          (primary key, serial)
    - date_of_hiring             (date)    
 ```
 Должность
 ```
-   - post_id_primary_key        (serial)
+   - post_id                    (primary key, serial)
    - post_type                  (varchar)    
    - division_type_id           (serial)
    - salary_id                  (serial)
 ```
 Оклад
 ```
-    - salary_id                 (serial)
+    - salary_id                 (primary key, serial)
     - salary                    (numeric) 
 ```
 Тип подразделения
 ```
-    - division_type_id          (serial)
+    - division_type_id          (primary key, serial)
     - division_type             (varchar)    
 ```    
 Структурное подразделение
 ```
-    - division_id               (serial)
+    - division_id               (primary key, serial)
     - division_name             (varchar)
     - division_type_id          (serial)    
 ```    
 Адрес
 ```
-    - address_id primary_key    (serial)   
+    - address_id_primary_key    (primary key, serial)   
     - address                   (varchar)
     - region_id                 (serial)    
 ```    
 Регион
 ```
-    - region_id                 (serial)
+    - region_id                 (primary key, serial)
     - region                    (varchar)
 ```
 
 Проект
 ```
-   - project_id primary_key     (serial)
+   - project_id                 (primary key, serial)
    - project_type               (varchar)
+   - staff_id                   (serial)
 ```
-
-
-staff (
-
- staff_id primary_key,
-
- FName VARCHAR(50) ,
- 
- LName VARCHAR(50) ,
- 
- Patronymic varchar(50),
-
- divisions_id varchar(50),
- 
- Structura_id varchar(50),
- 
- date_off_id datetime,
- 
- position_id varchar(50),
- 
- salary_id numeric,
- 
- address_id VARCHAR(50),
- 
- project_id VARCHAR(50),
- 
-)
-
-position (
-
-position_id primary_key
-
-spethion_type
-
-)
-
-divisions (
-
-divisions_id primary_key
-
-department varchar(50)
-
-Unit Group varchar(50)
-
-Unit Group_type
-
-department_type
-
-)
-
-Structura (
-
-Structura_id primary_key
-
-Group varchar(50)
-
-Structura_type 
-
-Structura_title
-
-)
-
-
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
