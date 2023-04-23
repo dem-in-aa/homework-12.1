@@ -102,29 +102,25 @@ F) Дата - дата (date)
 
 Адрес
 ```
+    - address_id primary_key (serial)   
 
-    -Идентификатор адреса ,первичный ключ, serial   
-
-    -Адрес, varchar
-    -id Региона, внешний ключ,serial
+    - address, varchar
+    - region_id (serial)
     
 ```    
 Регион
 ```
-    -id Региона, первичный ключ, serial
-    -Регион,varchar
+    - region_id (serial)
+    - Регион,varchar
 
 ```
 
 Проект
 ```
-  project_id primary_key (serial)
+   - project_id primary_key (serial)
 
-- project_type (varchar)
+   - project_type (varchar)
    ```
-
-
-
 
 
 staff (
