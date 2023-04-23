@@ -58,10 +58,9 @@ F) Дата - дата (date)
 
 <ins>Вид БД</ins>:
 
-Сотрудники
-
+Сотрудник
 ```
-    - staff_id primary_key
+    - staff_id_primary_key (serial)
     
     - Фамилия, varchar
     - Имя, varchar
@@ -71,32 +70,28 @@ F) Дата - дата (date)
     - Идентификатор адреса ,внешний ключ, serial   
     - id Проекта,внешний ключ,serial
 ```
-
-Должности
+Должность
 ```
-   - post_id, первичный ключ, integer 
-
-   - Должность, varchar     
-   - идентификатор структурного подразделения, внешний ключ, integer
-   - id оклада ,внешний ключ, integer
+   - post_id_primary_key     (serial)
+   - post_type               (varchar)    
+   - division_type_id        (serial)
+   - salary_id               (serial)
 ```
-
 Оклад
 ```
-    - salary_id  (serial)
-    - salary     (numeric) 
+    - salary_id              (serial)
+    - salary                 (numeric) 
 ```
 Тип подразделения
 ```
-    - division_type_id   (serial)
-    - division_type_name (varchar)
-    - division_type      (varchar)    
+    - division_type_id       (serial)
+    - division_type          (varchar)    
 ```    
 Структурное подразделение
 ```
-    - division_id        (serial)
-    - division_name      (varchar)
-    - division_type_id   (serial)    
+    - division_id            (serial)
+    - division_name          (varchar)
+    - division_type_id       (serial)    
 ```    
 Адрес
 ```
@@ -106,14 +101,14 @@ F) Дата - дата (date)
 ```    
 Регион
 ```
-    - region_id (serial)
-    - region    (varchar)
+    - region_id              (serial)
+    - region                 (varchar)
 ```
 
 Проект
 ```
-   - project_id primary_key (serial)
-   - project_type           (varchar)
+   - project_id primary_key  (serial)
+   - project_type            (varchar)
 ```
 
 
