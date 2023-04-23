@@ -1,6 +1,5 @@
 # Домашнее задание к занятию «Базы данных» Андрей Дёмин
 
----
 ### Легенда
 
 Заказчик передал вам [файл в формате Excel](https://github.com/netology-code/sdb-homeworks/blob/main/resources/hw-12-1.xlsx), в котором сформирован отчёт. 
