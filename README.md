@@ -84,26 +84,25 @@ F) Дата - дата (date)
 Оклад
 ```
     - salary_id  (serial)
-    - salary     (numeric)
-    
+    - salary     (numeric) 
 ```
-
-
+Тип подразделения
+```
+    - division_type_id   (serial)
+    - division_type_name (varchar)
+    - division_type      (varchar)    
+```    
 Структурное подразделение
 ```
-    - division_id
-
-    - Название, varchar
-    - тип подразделения, varchar
-    
+    - division_id        (serial)
+    - division_name      (varchar)
+    - division_type_id   (serial)    
 ```    
 Адрес
 ```
     - address_id primary_key (serial)   
-
     - address                (varchar)
-    - region_id              (serial)
-    
+    - region_id              (serial)    
 ```    
 Регион
 ```
@@ -177,13 +176,6 @@ Structura_type
 Structura_title
 
 )
-
-
-date_off_Employee )
-
-date_off_id primary_key
-
-date datetime
 
 
 
