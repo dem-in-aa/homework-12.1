@@ -114,7 +114,6 @@ F) Дата - дата (date)
 ```
    - project_id                 (primary key, serial)
    - project_type               (varchar)
-   - staff_id                   (serial)
 ```
 
 ## Дополнительные задания (со звёздочкой*)
