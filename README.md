@@ -95,11 +95,12 @@ F) Дата - дата (date)
 ```
     - division_id               (primary key, serial)
     - division_name             (varchar)
-    - division_type_id          (serial)    
+    - division_type_id          (serial)
+    - address_id                (serial)
 ```    
 Адрес
 ```
-    - address_id_primary_key    (primary key, serial)   
+    - address_id                (primary key, serial)   
     - address                   (varchar)
     - region_id                 (serial)    
 ```    
